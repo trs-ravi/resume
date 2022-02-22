@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.parent_resume{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#F7ECDE, #FBF8F1);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+}
+.child_resume{
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+}
+.child_resume_header{
+    height: 18%;
+    background-color: #54BAB9;
+}
+.child_resume_body{
+    display: flex;
+    width: 100%;
+    height: 75%;
+}
+.child_resume_body_left{
+    width: 25%;
+    height: 200%;
+    background-color: #E9DAC1;
+    margin-left: 3rem;
+    margin-top: -10rem;
+}
+.child_resume_body_left img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 1px solid #54BAB9;
+}
+.child_resume_body_left_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem .5rem;
+}
+.child_resume_body_right{
+    width: 65%;
+}
+
+.main_contact h3{
+    text-align: center;
+}
+.main_contact ul{
+    left: 21%;
+    transform: translateX(-21%);
+}
+.main_contact ul li{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+
+.main_education ul li{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+.main_education h3{
+ text-align: center;
+}
+.main_education h3{
+    text-align: center;
+   }
+.child_resume_body_right{
+     margin-left: 3rem;
+   }
+.main_professional_profile h4{
+    text-align: center;
+    background-color: #F7ECDE;
+    padding: .5rem;
+    font-size: 22px;
+
+}
+.main_experience h4{
+    text-align: center;
+    background-color: #F7ECDE;
+    padding: .5rem;
+    font-size: 22px;
+    margin-top: 3rem;
+
+}
+
+@keyframes run1 {
+    0% {
+      /* transform: translateY(-25%); */
+      top: -25%;
+    }
+    50% {
+        /* transform: translateY(5%);    */
+        top: 5%;
+    }
+  }
+
+@media only screen and (max-width: 768px){
+    .child_resume {
+        width: 100%;
+
+    }
+    .child_resume_body_left {
+        width: 40%;
+        margin-left: 0;
+        margin-top: -12rem;
+    }
+    .child_resume_body_right {
+        margin-left: 0;
+    }
+    .main_contact ul {
+        left: 0;
+        transform: none;
+    }
+    .main_contact ul li span, .main_education ul li span {
+        font-size: 11px;
+    }
+    /* .main_contact ul li p {
+        font-size: 10px;
+    line-height: 14px;
+    padding: 0 0.5rem;
+    } */
+    .main_professional_profile p, .main_experience p{
+        font-size: 10px;
+        line-height: 14px;
+        padding: 0 0.5rem;
+    }
+    .main_experience h4, .main_professional_profile h4{
+        font-size: 13px;
+    
+    }
+    .main_contact h3{
+        font-size: 13px;
+    }
+    .main_contact h3, .main_education h3{
+        font-size: 13px;
+    }
+    .main_contact ul{
+        margin-left: 2rem;
+    }
+    .child_resume_header h1{
+        font-size: 26px;
+        margin-left: 14rem;
+    }
+}
