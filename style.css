@@ -103,17 +103,6 @@
 
 }
 
-@keyframes run1 {
-    0% {
-      /* transform: translateY(-25%); */
-      top: -25%;
-    }
-    50% {
-        /* transform: translateY(5%);    */
-        top: 5%;
-    }
-  }
-
 @media only screen and (max-width: 768px){
     .child_resume {
         width: 100%;
